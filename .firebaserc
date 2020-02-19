@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "demos-cursos": {
+      "hosting": {
+        "novedades": [
+          "demos-cursos"
+        ]
+      }
+    }
+  }
+}

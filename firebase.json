@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "novedades",
+      "public": "dist/novedades",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}
