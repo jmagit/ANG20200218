@@ -2,7 +2,9 @@ import { Injectable, InjectionToken, Inject, Optional } from '@angular/core';
 
 export const ERROR_LEVEL = new InjectionToken<number>('ERROR_LEVEL');
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class LoggerService {
   private level: number = 99;
 

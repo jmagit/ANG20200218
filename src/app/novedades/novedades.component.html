@@ -1,5 +1,8 @@
-<p>novedades works!</p>
 <p>Precio: {{precio | number:'4.2-3':'es'}}</p>
-<input type="button" value="Crear" (click)="crear()" >
+<p>
+  <input type="button" value="Crear" (click)="crear()" >
+  <input type="button" value="Error" (click)="vm.add('Esto es una notificación de error')" >
+  <input type="button" value="Warn" (click)="vm.add('Esta notificación es un aviso', vm.NotificationType.warn)" >
+</p>
 <ng-container *ngComponentOutlet="seleccionado"></ng-container>
 <youtube-player videoId="PRQCAL_RMVo"></youtube-player>

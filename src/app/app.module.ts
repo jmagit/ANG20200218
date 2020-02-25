@@ -12,17 +12,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NovedadesComponent } from './novedades/novedades.component';
 import { DetalleComponent } from './detalle/detalle.component';
+import { DemosComponent } from './demos/demos.component';
+import { CommonServicesModule } from './common-services';
+import { MainModule } from './main';
 
 @NgModule({
   declarations: [
     AppComponent,
     NovedadesComponent,
-    DetalleComponent
+    DetalleComponent,
+    DemosComponent
   ],
   imports: [
     BrowserModule,
     YouTubePlayerModule,
     AppRoutingModule,
+    CommonServicesModule, MainModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
